@@ -1,15 +1,14 @@
 from app.database import get_db
-
-
+# Check pep8
 
 def output_formatter(results):
     out = []
     for result in results:
         res = {
-            "id": result[0],
-            "summary": result [1],
-            "description": result [2],
-            "is_done": result[3]
+            "id":result[0],
+            "summary":result[1],
+            "description":result[2],
+            "is_done":result[3]
         }
         out.append(res)
     return out
@@ -23,7 +22,7 @@ def scan():
 
 def select_by_id(task_id):
     conn = get_db()
-    cursor = conn.execute("SELECT * FROM task WHERE id=?", (task_id, )) # need comma
+    cursor = conn.execute("SELECT * FROM task WHERE id=?", (task_id, ))
     results = cursor.fetchall()
     cursor.close()
     if results:
@@ -37,15 +36,16 @@ def insert(task_data):
     )
     statement = """
         INSERT INTO task (
-        summary,
-        description
-        ) VALUES (? , ?)
+            summary,
+            description
+        ) VALUES (?, ?)
     """
     conn = get_db()
     conn.execute(statement, task_tuple)
     conn.commit()
 
-def update(task_data, task_id):
+def update(task_id, task_data):
+    print("task py update")
     task_tuple = (
         task_data.get("summary"),
         task_data.get("description"),

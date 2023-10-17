@@ -1,7 +1,6 @@
 from flask import g
 import sqlite3
 
-
 DATABASE_URL = "main.db"
 
 def get_db():

@@ -1,6 +1,3 @@
-
--- Create database table
-
 CREATE TABLE task (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     summary VARCHAR(128),
@@ -9,8 +6,8 @@ CREATE TABLE task (
 );
 
 -- Generate some dummy data
-INSERT INTO task (
-    summary,
+INSERT INTO task(
+    summary, 
     description
 )
     VALUES (

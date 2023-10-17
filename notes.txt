@@ -1,0 +1,151 @@
+a class is to an object as a blueprint is to a house
+
+# Variables that belong to a class are called (class) attributes
+# Functions that belong to a class are called "methods"
+
+
+export FLASK_APP=app/routes.py
+export FLASK_ENV=development
+flask run
+
+sh run_local.sh
+
+cd ~/Code/SDGKU/FSDI_111
+pwd
+source venv/bin/activate
+deactivate
+
+
+cmd prmpt
+
+
+# start server
+npm start
+
+# install
+npm install react-router-dom
+
+git status
+
+git remote rm origin
+
+git init
+
+git --version
+
+git remote add origin
+
+git add .
+
+git commit -m "Message"
+
+git push -u origin main
+
+git config --global user.name
+
+git config --global user.email
+
+# initialize the repo
+git initialize
+
+# set the url for the remote
+git remote add origin <URL>
+
+# added the files
+git add .
+
+# created a commit
+git commit -m "MESSAGE HERE"
+
+# push 1st time
+git push -u origin master
+
+
+----- FUTURE Uploads
+
+git add .
+git commit -m "SOMETHING"
+git push
+
+stop server before commit
+
+npm install -s axios
+
+pwd (print working directory)
+
+mkdir (make directory)
+
+~ (home directory)
+
+# tool to create virtual environms
+python3 -m pip install virtualenv
+# create virtual environment
+python3 -m venv venv 
+
+
+
+# activate venv
+source venv/bin/activate
+
+
+# deactivate
+deactivate
+
+
+# clear the terminal
+clear
+
+
+# install flask
+python3 -m pip install flask
+
+
+# create project
+#type the code
+
+
+
+
+# run the server
+python3 server.py
+
+Flask pymongo
+To read and write data to a mongo db
+
+
+python3 -m pip install "pymongo[srv]" certifi
+
+open . (finder)
+
+
+export FLASK_APP=
+export FLASK_ENV=
+flask run
+
+mkdir app 
+touch app/__init__.py 
+touch app/routes.py
+touch run_local.sh
+
+code . 
+
+https://git-scm.com/
+
+man git
+
+echo "# task_mgr" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:TylerSalvato/task_mgr.git
+git push -u origin main
+
+
+git remote add origin git@github.com:TylerSalvato/task_mgr.git
+git branch -M main
+git push -u origin main
+
+        #title = 'New task status: '
+        #options = ['Not done', 'Done']
+        #is_done, index = options, title, indicator='->'
